@@ -51,6 +51,8 @@ sudo reboot now
 ```sh
 sudo nano /etc/samba/smb.conf
 ```
+
+![This is an image](https://i.imgur.com/jjnlJ4r.jpg)
 7.	Add below text at the end of the line.. 
 ```sh
 [Pi-Share]
@@ -59,4 +61,5 @@ sudo nano /etc/samba/smb.conf
     public = yes
     writable = yes
 ```
+![This is an image](https://i.imgur.com/ho3x53G.jpg)
 8.	Press “CONTROL + O” to write  and then hit “Enter” to save the file
