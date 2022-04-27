@@ -55,6 +55,7 @@ sudo nano /etc/samba/smb.conf
 ![This is an image](https://i.imgur.com/jjnlJ4r.jpg)
 
 7.	Add below text at the end of the line.. 
+(I am going to make this folder read and write for everyone.)
 ```sh
 [Pi-Share]
     path = /home/pi/Pi-Share
@@ -65,3 +66,18 @@ sudo nano /etc/samba/smb.conf
 ![This is an image](https://i.imgur.com/ho3x53G.jpg)
 
 8.	Press “CONTROL + O” to write  and then hit “Enter” to save the file
+9.  Next we to make share folder, I am going to create in the home/pi directory 
+###  (Or you can resize SSD, make another partition and create a share folder on that partition. To make this tutorial simple, I am going to create a folder here.  )
+10. I am going to name the folder Pi-Share
+
+![This is an image](https://i.imgur.com/eaRYGfQ.jpg)
+
+11. Next we need to change permission, for that you have to right click and select permission, then change drop down menu according pic. (I am going to make this folder read and write for everyone.)
+
+![This is an image](https://i.imgur.com/qdteeko.jpg)
+
+12. click "ok"
+13. Then click confirm "yes"
+14. Next in PC, you need to map the network location in order to access
+15. Right click in This PC (Windows 10 / windows 11)
+16. Select Add a network location
