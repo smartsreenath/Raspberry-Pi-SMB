@@ -78,6 +78,25 @@ sudo nano /etc/samba/smb.conf
 
 12. click "ok"
 13. Then click confirm "yes"
+#### Windows 10 / Windows 11
 14. Next in PC, you need to map the network location in order to access
 15. Right click in This PC (Windows 10 / windows 11)
 16. Select Add a network location
+
+![This is an image](https://i.imgur.com/4K2Qn30.jpg)
+
+17. Click "next"
+18. Click "next" (choose a custom network location)
+19. Type the IP address of pi + name of the share folder (internet or network address)
+20. Mine look like this
+
+![This is an image](https://i.imgur.com/OcryYke.jpg)
+
+21. Click next
+22. Rename the Folder.
+
+![This is an image](https://i.imgur.com/D5PtikB.jpg)
+
+23. That is it.. enjoy
+
+
