@@ -24,3 +24,39 @@ The faster your Raspberry Pi, the faster your data will save to your external st
 ### Even though you have perefectly running OS installed in Raspberyy pi, I recommend you go through below tutorials
  - https://github.com/smartsreenath/Raspberry-Pi-VNC-Install/blob/main/README.md (1st Part)
 - https://github.com/smartsreenath/Raspberry-Pi-SSD-BOOT (2nd Part)
+
+1. Before proceeding we have to make sure that our pi os is running with new updates
+2. Type the below commands (I am assuming that you have VNC and SSH enabled. if not go through above tutorials)
+```sh
+sudo apt update
+```
+```sh
+sudo apt full-upgrade
+```
+6.	Type “Y” for yes
+7.	Reboot PI, Type
+```sh
+sudo reboot now
+```
+3. Next is installing SAMBA on RPI, Open terminal
+```sh
+sudo apt-get install samba 
+```
+4.	Enter “Y”  When prompted
+5.	Reboot RPI
+```sh
+sudo reboot now
+```
+6. Next  we have to modify Samba Configuration file, in order to do that open terminal
+```sh
+sudo nano /etc/samba/smb.conf
+```
+7.	Add below text at the end of the line.. 
+```sh
+[Pi-Share]
+    path = /home/pi/Pi-Share
+    read only = no
+    public = yes
+    writable = yes
+```
+8.	Press “CONTROL + O” to write  and then hit “Enter” to save the file
