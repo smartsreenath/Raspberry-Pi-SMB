@@ -97,6 +97,6 @@ sudo nano /etc/samba/smb.conf
 
 ![This is an image](https://i.imgur.com/D5PtikB.jpg)
 
-23. That is it.. enjoy
+23. That is it.. enjoy :stethoscope:
 
 
